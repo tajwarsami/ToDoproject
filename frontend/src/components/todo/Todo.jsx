@@ -28,7 +28,7 @@ const Todo = () => {
     }
     if (id) {
       try {
-        await axios.post("${window.location.origin}/api/v2/addTask", {
+        await axios.post(`${window.location.origin}/api/v2/addTask`, {
           title: Inputs.title,
           body: Inputs.body,
           id,
