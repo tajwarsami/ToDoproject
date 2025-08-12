@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.signup {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #626fa5 0%, #2a242f 100%);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  width: 900px;
+  max-width: 95vw;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  min-height: 450px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.left-column {
+  flex-direction: column;
+  text-align: center;
+}
+
+.heading-container h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  user-select: none;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.heading-container .highlight {
+  color: #d4b5ff;
+}
+
+.right-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(98, 111, 165, 0.7);
+}
+
+.btn-signup {
+  padding: 15px;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, #957272 0%, #6e4a4a 100%);
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-signup:hover {
+  background: linear-gradient(135deg, #b97d7d 0%, #523535 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(185, 125, 125, 0.5);
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .left-column, .right-column {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+  .heading-container h1 {
+    font-size: 2.8rem;
+  }
+  .form-container {
+    max-width: 100%;
+  }
+}
+.main-content {
+  padding-bottom: 80px;
+}

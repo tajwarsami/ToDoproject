@@ -1,0 +1,128 @@
+.todo {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #626fa5 0%, #2a242f 100%);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #f9f9f9;
+}
+
+.todo-inputs-div {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.todo-inputs {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.todo-card {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.todo-card-p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #eee;
+}
+
+.card-icons {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.del {
+  color: rgba(240, 0, 0, 0.87);
+}
+
+.card-icon-head {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #f9f9f9;
+}
+
+.card-icon-head:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.todo-update {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.update {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.todo-inputs-div {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  padding: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.todo-inputs {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-inputs:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(98, 111, 165, 0.7);
+}
+
+.home-btn {
+  background: linear-gradient(135deg, #957272 0%, #6e4a4a 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+  background: linear-gradient(135deg, #b97d7d 0%, #523535 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(185, 125, 125, 0.5);
+}
